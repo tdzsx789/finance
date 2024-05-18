@@ -1,0 +1,30 @@
+.wrap {
+    position: absolute;
+    left: 67px;
+    top: 258px;
+    width: 945px;
+    height: 1350px;
+
+    .loadingWrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+
+        .loadingImg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .iframe {
+        transform-origin: 0 0;
+        border: 0;
+        outline: 0;
+    }
+}

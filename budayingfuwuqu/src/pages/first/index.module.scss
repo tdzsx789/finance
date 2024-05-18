@@ -1,0 +1,86 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../asset/背景.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .swiper {
+        position: absolute;
+        left: 67px;
+        top: 258px;
+        width: 945px;
+        height: 490px;
+
+        .mask {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            // z-index: 3;
+        }
+
+        :global(.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal) {
+            text-align: right;
+            width: 95%;
+        }
+
+        :global(.swiper-pagination-bullet.swiper-pagination-bullet-active) {
+            width: 12px;
+            height: 12px;
+            background-color: #ffffff;
+            border-radius: 6px;
+        }
+
+        :global(.swiper-pagination-bullet) {
+            width: 12px;
+            height: 12px;
+            background-color: #ffffff;
+        }
+    }
+
+    .button {
+        position: absolute;
+        left: 923px;
+        top: 298px;
+        z-index: 3;
+    }
+
+    .buttons {
+        position: absolute;
+        left: 71px;
+        top: 785px;
+    }
+
+    .button1 {
+        position: absolute;
+        left: 88px;
+        top: 785px;
+        width: 270px;
+        height: 280px;
+        z-index: 3;
+    }
+
+    .button2 {
+        position: absolute;
+        left: 405px;
+        top: 785px;
+        width: 270px;
+        height: 280px;
+        z-index: 3;
+    }
+
+    .button3 {
+        position: absolute;
+        left: 722px;
+        top: 785px;
+        width: 270px;
+        height: 280px;
+        z-index: 3;
+    }
+
+    .lineChart {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}

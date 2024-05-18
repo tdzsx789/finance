@@ -1,0 +1,82 @@
+.wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    .rect1 {
+        position: absolute;
+        left: 371px;
+        top: 447px;
+    }
+
+    .rect2 {
+        position: absolute;
+        left: 67px;
+        top: 447px;
+    }
+
+    .text1 {
+        position: absolute;
+        left: 67px;
+        top: 248px;
+    }
+
+    .text2 {
+        position: absolute;
+        left: 102px;
+        top: 549px;
+        z-index: 3;
+    }
+
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        // background: rgba(209, 194, 176, 0.2);
+        background: rgba(18, 24, 110, 0.7);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(241, 162, 57);
+        border-radius: 4px;
+    }
+
+    .scrollWrap {
+        position: absolute;
+        left: 391px;
+        top: 487px;
+        width: 600px;
+        height: 1070px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-right: 20px;
+        box-sizing: border-box;
+
+        .image {
+            width: 560px;
+        }
+    }
+
+    .clickButton {
+        width: 225px;
+        height: 156px;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .button {
+        width: 393px;
+        height: 266px;
+        position: absolute;
+        background-image: url(../../asset/second/选中框.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        pointer-events: none;
+    }
+}

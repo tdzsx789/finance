@@ -1,0 +1,990 @@
+[
+    {
+        "country_code": "BWA",
+        "country_name": "博茨瓦纳"
+    },
+    {
+        "country_code": "JOR",
+        "country_name": "约旦"
+    },
+    {
+        "country_code": "LBR",
+        "country_name": "利比里亚"
+    },
+    {
+        "country_code": "LVA",
+        "country_name": "拉脱维亚"
+    },
+    {
+        "country_code": "POL",
+        "country_name": "波兰"
+    },
+    {
+        "country_code": "SJM",
+        "country_name": "斯瓦尔巴群岛"
+    },
+    {
+        "country_code": "SLV",
+        "country_name": "萨尔瓦多"
+    },
+    {
+        "country_code": "SSD",
+        "country_name": "南苏丹"
+    },
+    {
+        "country_code": "YEM",
+        "country_name": "也门"
+    },
+    {
+        "country_code": "BLR",
+        "country_name": "白俄罗斯"
+    },
+    {
+        "country_code": "BTN",
+        "country_name": "不丹"
+    },
+    {
+        "country_code": "ESH",
+        "country_name": "西撒哈拉"
+    },
+    {
+        "country_code": "GNQ",
+        "country_name": "赤道几内亚"
+    },
+    {
+        "country_code": "JPN",
+        "country_name": "日本"
+    },
+    {
+        "country_code": "KEN",
+        "country_name": "肯尼亚"
+    },
+    {
+        "country_code": "MOZ",
+        "country_name": "莫桑比克"
+    },
+    {
+        "country_code": "COD",
+        "country_name": "刚果（金）"
+    },
+    {
+        "country_code": "EGY",
+        "country_name": "埃及"
+    },
+    {
+        "country_code": "GBR",
+        "country_name": "英国"
+    },
+    {
+        "country_code": "QAT",
+        "country_name": "卡塔尔"
+    },
+    {
+        "country_code": "TKL",
+        "country_name": "托克劳"
+    },
+    {
+        "country_code": "ZAF",
+        "country_name": "南非"
+    },
+    {
+        "country_code": "BHR",
+        "country_name": "巴林"
+    },
+    {
+        "country_code": "BMU",
+        "country_name": "百慕大"
+    },
+    {
+        "country_code": "GTM",
+        "country_name": "危地马拉"
+    },
+    {
+        "country_code": "MDV",
+        "country_name": "马尔代夫"
+    },
+    {
+        "country_code": "NPL",
+        "country_name": "尼泊尔"
+    },
+    {
+        "country_code": "SLB",
+        "country_name": "所罗门群岛"
+    },
+    {
+        "country_code": "UGA",
+        "country_name": "乌干达"
+    },
+    {
+        "country_code": "ATG",
+        "country_name": "安提瓜和巴布达"
+    },
+    {
+        "country_code": "BRN",
+        "country_name": "文莱"
+    },
+    {
+        "country_code": "BVT",
+        "country_name": "布韦岛"
+    },
+    {
+        "country_code": "GUF",
+        "country_name": "法属圭亚那"
+    },
+    {
+        "country_code": "MIT",
+        "country_name": "马耳他"
+    },
+    {
+        "country_code": "THA",
+        "country_name": "泰国"
+    },
+    {
+        "country_code": "ATF",
+        "country_name": "法属南部领地"
+    },
+    {
+        "country_code": "DJI",
+        "country_name": "吉布提"
+    },
+    {
+        "country_code": "ERI",
+        "country_name": "厄立特里亚"
+    },
+    {
+        "country_code": "FRO",
+        "country_name": "法罗群岛"
+    },
+    {
+        "country_code": "GGY",
+        "country_name": "根西岛"
+    },
+    {
+        "country_code": "GUM",
+        "country_name": "关岛"
+    },
+    {
+        "country_code": "MKD",
+        "country_name": "马其顿"
+    },
+    {
+        "country_code": "MYT",
+        "country_name": "马约特"
+    },
+    {
+        "country_code": "REU",
+        "country_name": "留尼汪"
+    },
+    {
+        "country_code": "SEN",
+        "country_name": "塞内加尔"
+    },
+    {
+        "country_code": "SOM",
+        "country_name": "索马里"
+    },
+    {
+        "country_code": "VAT",
+        "country_name": "梵蒂冈"
+    },
+    {
+        "country_code": "VGB",
+        "country_name": "英属维尔京群岛"
+    },
+    {
+        "country_code": "IMN",
+        "country_name": "马恩鸟"
+    },
+    {
+        "country_code": "LKA",
+        "country_name": "斯里兰卡"
+    },
+    {
+        "country_code": "NOR",
+        "country_name": "挪威"
+    },
+    {
+        "country_code": "ROU",
+        "country_name": "罗马尼亚"
+    },
+    {
+        "country_code": "STP",
+        "country_name": "圣多美和普林西比"
+    },
+    {
+        "country_code": "TCA",
+        "country_name": "特克斯和凯科斯群岛"
+    },
+    {
+        "country_code": "TZA",
+        "country_name": "坦桑尼亚"
+    },
+    {
+        "country_code": "CCK",
+        "country_name": "科科斯群岛"
+    },
+    {
+        "country_code": "COK",
+        "country_name": "库克群岛"
+    },
+    {
+        "country_code": "LSO",
+        "country_name": "莱索托"
+    },
+    {
+        "country_code": "MYS",
+        "country_name": "马来西亚"
+    },
+    {
+        "country_code": "NER",
+        "country_name": "尼日尔"
+    },
+    {
+        "country_code": "SPM",
+        "country_name": "圣皮埃尔和密克隆"
+    },
+    {
+        "country_code": "ALA",
+        "country_name": "奥兰群岛"
+    },
+    {
+        "country_code": "ARE",
+        "country_name": "阿联酋"
+    },
+    {
+        "country_code": "BHS",
+        "country_name": "巴哈马"
+    },
+    {
+        "country_code": "CZE",
+        "country_name": "捷克"
+    },
+    {
+        "country_code": "IRN",
+        "country_name": "伊朗"
+    },
+    {
+        "country_code": "KOR",
+        "country_name": "韩国"
+    },
+    {
+        "country_code": "LBY",
+        "country_name": "利比亚"
+    },
+    {
+        "country_code": "TLS",
+        "country_name": "东帝汶"
+    },
+    {
+        "country_code": "WLF",
+        "country_name": "瓦利斯群岛和富图纳群岛"
+    },
+    {
+        "country_code": "ABW",
+        "country_name": "阿鲁巴"
+    },
+    {
+        "country_code": "ARM",
+        "country_name": "亚美尼亚"
+    },
+    {
+        "country_code": "COL",
+        "country_name": "哥伦比亚"
+    },
+    {
+        "country_code": "KNA",
+        "country_name": "圣基茨和尼维斯"
+    },
+    {
+        "country_code": "LCA",
+        "country_name": "圣卢西亚"
+    },
+    {
+        "country_code": "MNG",
+        "country_name": "蒙古"
+    },
+    {
+        "country_code": "SDN",
+        "country_name": "苏丹"
+    },
+    {
+        "country_code": "SMR",
+        "country_name": "圣马力诺"
+    },
+    {
+        "country_code": "SWZ",
+        "country_name": "斯威士兰"
+    },
+    {
+        "country_code": "TCD",
+        "country_name": "乍得"
+    },
+    {
+        "country_code": "TON",
+        "country_name": "汤加"
+    },
+    {
+        "country_code": "TUR",
+        "country_name": "土耳其"
+    },
+    {
+        "country_code": "AUS",
+        "country_name": "澳大利亚"
+    },
+    {
+        "country_code": "CAN",
+        "country_name": "加拿大"
+    },
+    {
+        "country_code": "CHL",
+        "country_name": "智利"
+    },
+    {
+        "country_code": "CRI",
+        "country_name": "哥斯达黎加"
+    },
+    {
+        "country_code": "GMB",
+        "country_name": "冈比亚"
+    },
+    {
+        "country_code": "SUR",
+        "country_name": "苏里南"
+    },
+    {
+        "country_code": "SVN",
+        "country_name": "斯洛文尼亚"
+    },
+    {
+        "country_code": "VCT",
+        "country_name": "圣文森特和格林纳丁斯"
+    },
+    {
+        "country_code": "AGO",
+        "country_name": "安苛拉"
+    },
+    {
+        "country_code": "HRV",
+        "country_name": "克罗地亚"
+    },
+    {
+        "country_code": "IOT",
+        "country_name": "英属印度洋领地"
+    },
+    {
+        "country_code": "MNE",
+        "country_name": "黑山"
+    },
+    {
+        "country_code": "NIC",
+        "country_name": "尼加拉瓜"
+    },
+    {
+        "country_code": "PLW",
+        "country_name": "帕劳\n\n"
+    },
+    {
+        "country_code": "SHN",
+        "country_name": "圣赫勒拿"
+    },
+    {
+        "country_code": "EST",
+        "country_name": "爱沙尼亚"
+    },
+    {
+        "country_code": "NAM",
+        "country_name": "纳米比亚"
+    },
+    {
+        "country_code": "SYR",
+        "country_name": "叙利亚"
+    },
+    {
+        "country_code": "TTO",
+        "country_name": "特立尼达和多巴哥"
+    },
+    {
+        "country_code": "AND",
+        "country_name": "安道尔"
+    },
+    {
+        "country_code": "ASM",
+        "country_name": "美属萨摩亚"
+    },
+    {
+        "country_code": "ATA",
+        "country_name": "南极洲"
+    },
+    {
+        "country_code": "AUT",
+        "country_name": "奥地利"
+    },
+    {
+        "country_code": "BEL",
+        "country_name": "比利时"
+    },
+    {
+        "country_code": "BRA",
+        "country_name": "巴西"
+    },
+    {
+        "country_code": "FJI",
+        "country_name": "斐济"
+    },
+    {
+        "country_code": "HND",
+        "country_name": "洪都拉斯"
+    },
+    {
+        "country_code": "KWT",
+        "country_name": "科威特"
+    },
+    {
+        "country_code": "MLI",
+        "country_name": "马里"
+    },
+    {
+        "country_code": "TGO",
+        "country_name": "多哥"
+    },
+    {
+        "country_code": "TJK",
+        "country_name": "塔吉克斯坦"
+    },
+    {
+        "country_code": "TKM",
+        "country_name": "土库曼斯坦"
+    },
+    {
+        "country_code": "TUV",
+        "country_name": "图瓦卢"
+    },
+    {
+        "country_code": "BDI",
+        "country_name": "布隆迪"
+    },
+    {
+        "country_code": "CAF",
+        "country_name": "中非"
+    },
+    {
+        "country_code": "DZA",
+        "country_name": "阿尔及利亚"
+    },
+    {
+        "country_code": "ESP",
+        "country_name": "西班牙"
+    },
+    {
+        "country_code": "ETH",
+        "country_name": "埃塞像比亚"
+    },
+    {
+        "country_code": "HTI",
+        "country_name": "海地"
+    },
+    {
+        "country_code": "ITA",
+        "country_name": "意大利"
+    },
+    {
+        "country_code": "SGP",
+        "country_name": "新加坡"
+    },
+    {
+        "country_code": "ZWE",
+        "country_name": "津巴布韦"
+    },
+    {
+        "country_code": "AFG",
+        "country_name": "阿富汗"
+    },
+    {
+        "country_code": "DNK",
+        "country_name": "丹麦"
+    },
+    {
+        "country_code": "DOM",
+        "country_name": "多米尼加"
+    },
+    {
+        "country_code": "GEO",
+        "country_name": "格鲁吉亚"
+    },
+    {
+        "country_code": "GIN",
+        "country_name": "几内亚"
+    },
+    {
+        "country_code": "MAC",
+        "country_name": "澳门"
+    },
+    {
+        "country_code": "MAR",
+        "country_name": "摩洛哥"
+    },
+    {
+        "country_code": "OMN",
+        "country_name": "阿曼"
+    },
+    {
+        "country_code": "SYC",
+        "country_name": "塞舌尔"
+    },
+    {
+        "country_code": "WSM",
+        "country_name": "萨摩亚"
+    },
+    {
+        "country_code": "BFA",
+        "country_name": "布基纳法索"
+    },
+    {
+        "country_code": "CUB",
+        "country_name": "古巴"
+    },
+    {
+        "country_code": "CXR",
+        "country_name": "圣诞岛"
+    },
+    {
+        "country_code": "FLK",
+        "country_name": "马尔維内斯群岛（福克兰）"
+    },
+    {
+        "country_code": "FSM",
+        "country_name": "密克罗尼西亚联邦"
+    },
+    {
+        "country_code": "GUY",
+        "country_name": "圭亚那"
+    },
+    {
+        "country_code": "HKG",
+        "country_name": "中国香港"
+    },
+    {
+        "country_code": "KGZ",
+        "country_name": "吉尔吉斯斯坦"
+    },
+    {
+        "country_code": "MUS",
+        "country_name": "毛里求斯"
+    },
+    {
+        "country_code": "URY",
+        "country_name": "乌拉圭"
+    },
+    {
+        "country_code": "NIU",
+        "country_name": "纽埃"
+    },
+    {
+        "country_code": "NZL",
+        "country_name": "新西兰"
+    },
+    {
+        "country_code": "VNM",
+        "country_name": "越南"
+    },
+    {
+        "country_code": "ALB",
+        "country_name": "阿尔巴尼亚"
+    },
+    {
+        "country_code": "BRB",
+        "country_name": "巴巴多斯"
+    },
+    {
+        "country_code": "MAF",
+        "country_name": "法属圣马丁"
+    },
+    {
+        "country_code": "MCO",
+        "country_name": "摩纳哥"
+    },
+    {
+        "country_code": "PSE",
+        "country_name": "巴勒斯坦"
+    },
+    {
+        "country_code": "COM",
+        "country_name": "科摩罗"
+    },
+    {
+        "country_code": "GAB",
+        "country_name": "加蓬"
+    },
+    {
+        "country_code": "NCL",
+        "country_name": "新喀里多尼亚"
+    },
+    {
+        "country_code": "PRT",
+        "country_name": "葡萄牙"
+    },
+    {
+        "country_code": "SRB",
+        "country_name": "塞尔维亚"
+    },
+    {
+        "country_code": "SVK",
+        "country_name": "斯洛伐克"
+    },
+    {
+        "country_code": "UZB",
+        "country_name": "乌兹别克斯坦"
+    },
+    {
+        "country_code": "VIR",
+        "country_name": "美属维尔京群岛"
+    },
+    {
+        "country_code": "IND",
+        "country_name": "印度"
+    },
+    {
+        "country_code": "MNP",
+        "country_name": "北马里亚纳群岛"
+    },
+    {
+        "country_code": "PRI",
+        "country_name": "波多黎各"
+    },
+    {
+        "country_code": "PRY",
+        "country_name": "巴拉圭"
+    },
+    {
+        "country_code": "RUS",
+        "country_name": "俄罗斯"
+    },
+    {
+        "country_code": "USA",
+        "country_name": "美国"
+    },
+    {
+        "country_code": "ZMB",
+        "country_name": "赞比亚"
+    },
+    {
+        "country_code": "AZE",
+        "country_name": "阿塞拜疆"
+    },
+    {
+        "country_code": "BGD",
+        "country_name": "孟加拉"
+    },
+    {
+        "country_code": "BIH",
+        "country_name": "波黑"
+    },
+    {
+        "country_code": "CHN",
+        "country_name": "中国"
+    },
+    {
+        "country_code": "DEU",
+        "country_name": "德国"
+    },
+    {
+        "country_code": "IRQ",
+        "country_name": "伊拉克"
+    },
+    {
+        "country_code": "ISR",
+        "country_name": "以色列"
+    },
+    {
+        "country_code": "LIE",
+        "country_name": "列支敦士登"
+    },
+    {
+        "country_code": "NFK",
+        "country_name": "诺福克岛"
+    },
+    {
+        "country_code": "PAN",
+        "country_name": "巴拿马"
+    },
+    {
+        "country_code": "BOL",
+        "country_name": "玻利维亚"
+    },
+    {
+        "country_code": "FRA",
+        "country_name": "法国"
+    },
+    {
+        "country_code": "GIB",
+        "country_name": "直布罗陀"
+    },
+    {
+        "country_code": "JAM",
+        "country_name": "牙买加"
+    },
+    {
+        "country_code": "LTU",
+        "country_name": "立陶宛"
+    },
+    {
+        "country_code": "PAK",
+        "country_name": "巴基斯坦"
+    },
+    {
+        "country_code": "PER",
+        "country_name": "秘鲁"
+    },
+    {
+        "country_code": "UMI",
+        "country_name": "美国本土外小岛屿"
+    },
+    {
+        "country_code": "AIA",
+        "country_name": "安圭拉"
+    },
+    {
+        "country_code": "BLZ",
+        "country_name": "伯利兹"
+    },
+    {
+        "country_code": "CYM",
+        "country_name": "开曼群岛"
+    },
+    {
+        "country_code": "IRL",
+        "country_name": "爱尔兰"
+    },
+    {
+        "country_code": "KAZ",
+        "country_name": "哈萨克斯坦"
+    },
+    {
+        "country_code": "MSR",
+        "country_name": "蒙塞拉特岛"
+    },
+    {
+        "country_code": "PRK",
+        "country_name": "朝鲜"
+    },
+    {
+        "country_code": "SLE",
+        "country_name": "塞拉利昂"
+    },
+    {
+        "country_code": "CIV",
+        "country_name": "科特迪瓦"
+    },
+    {
+        "country_code": "CMR",
+        "country_name": "零麦隆"
+    },
+    {
+        "country_code": "CPV",
+        "country_name": "佛得角"
+    },
+    {
+        "country_code": "GLP",
+        "country_name": "瓜德罗普"
+    },
+    {
+        "country_code": "MEX",
+        "country_name": "墨西哥"
+    },
+    {
+        "country_code": "MMR",
+        "country_name": "缅甸"
+    },
+    {
+        "country_code": "MTQ",
+        "country_name": "马提尼克"
+    },
+    {
+        "country_code": "SWE",
+        "country_name": "瑞典"
+    },
+    {
+        "country_code": "TWN",
+        "country_name": "中国台湾"
+    },
+    {
+        "country_code": "UKR",
+        "country_name": "鸟克兰"
+    },
+    {
+        "country_code": "CYP",
+        "country_name": "塞浦路斯"
+    },
+    {
+        "country_code": "DMA",
+        "country_name": "多米尼克"
+    },
+    {
+        "country_code": "GHA",
+        "country_name": "加纳"
+    },
+    {
+        "country_code": "GRL",
+        "country_name": "格陵兰"
+    },
+    {
+        "country_code": "IDN",
+        "country_name": "印度尼西亚"
+    },
+    {
+        "country_code": "PCN",
+        "country_name": "皮特凯恩群岛"
+    },
+    {
+        "country_code": "SGS",
+        "country_name": "南乔治亚岛和南桑威奇群岛"
+    },
+    {
+        "country_code": "BGR",
+        "country_name": "保加利亚"
+    },
+    {
+        "country_code": "COG",
+        "country_name": "刚果（布）"
+    },
+    {
+        "country_code": "GRC",
+        "country_name": "希腊"
+    },
+    {
+        "country_code": "LUX",
+        "country_name": "卢森堡"
+    },
+    {
+        "country_code": "VUT",
+        "country_name": "瓦努阿图"
+    },
+    {
+        "country_code": "BES",
+        "country_name": "荷兰加勒比区"
+    },
+    {
+        "country_code": "ECU",
+        "country_name": "厄瓜多尔"
+    },
+    {
+        "country_code": "LAO",
+        "country_name": "老挝"
+    },
+    {
+        "country_code": "LBN",
+        "country_name": "黎巴嫩"
+    },
+    {
+        "country_code": "MWI",
+        "country_name": "马拉维"
+    },
+    {
+        "country_code": "NRU",
+        "country_name": "瑙鲁"
+    },
+    {
+        "country_code": "PNG",
+        "country_name": "巴布亚新几内亚"
+    },
+    {
+        "country_code": "SAU",
+        "country_name": "沙特阿拉伯"
+    },
+    {
+        "country_code": "TUN",
+        "country_name": "突尼斯"
+    },
+    {
+        "country_code": "BLM",
+        "country_name": "圣巴泰勒米岛"
+    },
+    {
+        "country_code": "GNB",
+        "country_name": "几内亚比绍"
+    },
+    {
+        "country_code": "GRD",
+        "country_name": "格林纳达"
+    },
+    {
+        "country_code": "JEY",
+        "country_name": "泽西岛"
+    },
+    {
+        "country_code": "MDG",
+        "country_name": "马达加斯加"
+    },
+    {
+        "country_code": "MRT",
+        "country_name": "毛里塔尼亚"
+    },
+    {
+        "country_code": "NGA",
+        "country_name": "尼日利亚"
+    },
+    {
+        "country_code": "NLD",
+        "country_name": "荷兰"
+    },
+    {
+        "country_code": "PYF",
+        "country_name": "法属波利尼西亚"
+    },
+    {
+        "country_code": "VEN",
+        "country_name": "委内瑞拉"
+    },
+    {
+        "country_code": "ARG",
+        "country_name": "阿根廷"
+    },
+    {
+        "country_code": "FIN",
+        "country_name": "芬兰"
+    },
+    {
+        "country_code": "KIR",
+        "country_name": "基里巴斯"
+    },
+    {
+        "country_code": "MDA",
+        "country_name": "摩尔多瓦"
+    },
+    {
+        "country_code": "MHL",
+        "country_name": "马绍尔群岛"
+    },
+    {
+        "country_code": "PHL",
+        "country_name": "菲律宾"
+    },
+    {
+        "country_code": "RWA",
+        "country_name": "卢旺达"
+    },
+    {
+        "country_code": "BEN",
+        "country_name": "贝宁"
+    },
+    {
+        "country_code": "CHE",
+        "country_name": "瑞士"
+    },
+    {
+        "country_code": "HMD",
+        "country_name": "赫德岛和麦克唐纳群岛"
+    },
+    {
+        "country_code": "HUN",
+        "country_name": "匈牙利"
+    },
+    {
+        "country_code": "ISL",
+        "country_name": "冰岛"
+    },
+    {
+        "country_code": "KHM",
+        "country_name": "柬埔寨"
+    }
+]

@@ -1,0 +1,32 @@
+.wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+
+  .time {
+    position: absolute;
+    left: 313px;
+    top: 124px;
+    font-size: 200px;
+    font-weight: bold;
+  }
+
+  .date{
+    width: 500px;
+    position: absolute;
+    left: 1192px;
+    top: 160px;
+    font-size: 80px;
+    font-weight: bold;
+  }
+
+  .week {
+    width: 500px;
+    position: absolute;
+    left: 1192px;
+    top: 250px;
+    font-size: 80px;
+    font-weight: bold;
+  }
+}

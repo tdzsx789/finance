@@ -1,0 +1,14 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+      - build/**/*
+      - public/electron.js
+extraMetadata:
+  main: build/electron.js
+appId: com.example.app
+productName: 基地总览
+extends: react-cra
+electronVersion: 30.0.6

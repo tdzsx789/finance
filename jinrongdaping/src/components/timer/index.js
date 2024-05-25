@@ -21,7 +21,6 @@ const App = memo(function App() {
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, []);
 
-  console.log("_date", date);
   return (
     <div className={styles.wrap}>
       <div className={styles.time}>{time.toLocaleTimeString()}</div>

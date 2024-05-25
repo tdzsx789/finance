@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Control from './Control';
 import reportWebVitals from './reportWebVitals';
+
+const env = process.env.REACT_APP_ENV;
+console.log('env', env)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {env === 'control' ? <Control /> : <App />}
   </React.StrictMode>
 );
 

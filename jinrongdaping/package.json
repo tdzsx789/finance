@@ -6,7 +6,8 @@
   "homepage": "./",
   "devDependencies": {
     "electron": "^30.0.6",
-    "electron-packager": "^17.1.2"
+    "electron-packager": "^17.1.2",
+    "env-cmd": "^10.1.0"
   },
   "dependencies": {
     "@craco/craco": "^7.1.0",
@@ -27,7 +28,9 @@
   },
   "scripts": {
     "start": "craco start",
+    "start:control": "env-cmd -f .env.control craco start",
     "build": "craco build",
+    "build:control": "env-cmd -f .env.control craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
     "electron-start": "electron .",
@@ -53,16 +56,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://tsanghi.com",
-  "build": {
-    "appId": "com.example.app",
-    "productName": "基地总览",
-    "files": [
-      "build/**/*",
-      "public/electron.js"
-    ],
-    "directories": {
-      "buildResources": "assets"
-    }
-  }
+  "proxy": "https://tsanghi.com"
 }

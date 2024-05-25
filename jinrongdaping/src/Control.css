@@ -1,0 +1,22 @@
+.Control {
+  width: 1920px;
+  height: 1080px;
+  background-image: url(./asset/control/触摸屏.jpg);
+  /* background-image: url(./asset/一级.jpg); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.buttons1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 370px;
+}
+
+.buttons2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 687px;
+}

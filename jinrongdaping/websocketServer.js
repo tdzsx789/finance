@@ -14,8 +14,6 @@ server.on('connection', ws => {
       }
     });
   });
-
-  ws.send('Hello! Message From Server!!');
 });
 
 console.log('WebSocket server is running on ws://localhost:8080');

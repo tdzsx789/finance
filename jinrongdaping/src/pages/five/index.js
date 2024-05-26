@@ -6,7 +6,7 @@ const App = memo(function App({ show }) {
   return (
     <div className={styles.wrap} style={{ display: show ? 'block' : 'none' }}>
       <iframe
-        src={"https://www.baidu.com/"}
+        src={"https://financeun.com/"}
         className={styles.iframe}
         width={7360}
         height={7070}

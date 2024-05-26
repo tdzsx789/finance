@@ -1,35 +1,47 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import First from './pages/first';
-import Second from './pages/second';
-import Third from './pages/third';
-import Four from './pages/four';
-import Five from './pages/five';
+import { useEffect, useState, useRef } from "react";
+import "./App.css";
+import First from "./pages/first";
+import Second from "./pages/second";
+import Third from "./pages/third";
+import Four from "./pages/four";
+import Five from "./pages/five";
 
 function App() {
+  const socketRef = useRef();
   const [showPage, setShowPage] = useState(1);
-
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    const ws = new WebSocket('ws://localhost:8080');
+    socketRef.current = new WebSocket("ws://localhost:8080");
 
-    ws.onopen = () => {
-      console.log('Connected to WebSocket server');
+    socketRef.current.onopen = () => {
+      console.log("建立webSocket成功！");
     };
 
-    ws.onmessage = event => {
-      console.log('event', event.data)
+    socketRef.current.onmessage = async (event) => {
+      const _text = await event.data.text();
+      console.log("tttt", _text);
+      if (_text === 'jinrongdashuju') {
+        setShowPage(1);
+      }
+      if (_text === 'chengshidashuju') {
+        setShowPage(2);
+      }
+      if (_text === 'chanyedashuju') {
+        setShowPage(3);
+      }
+      if (_text === 'xianshangpingtai') {
+        setShowPage(7);
+      }
     };
 
     return () => {
-      ws.close();
+      socketRef.current.close();
     };
   }, []);
 
   useEffect(function () {
     document.addEventListener("keydown", (event) => {
-      console.log('event', event)
       // do something
       if (event.keyCode === 49) {
         setShowPage(1);
@@ -53,14 +65,12 @@ function App() {
         setShowPage(6);
       }
     });
-  }, [])
-
-  console.log('showPage', showPage)
+  }, []);
 
   return (
     <div className="App">
       <First show={showPage === 1} />
-      <Second show={showPage === 2 || showPage === 5}  sub={showPage === 5}/>
+      <Second show={showPage === 2 || showPage === 5} sub={showPage === 5} />
       <Third show={showPage === 3 || showPage === 6} sub={showPage === 6} />
       <Four show={showPage === 4} />
       <Five show={showPage === 7} />

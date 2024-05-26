@@ -8,15 +8,36 @@
 }
 
 .buttons1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 370px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 370px;
 }
 
 .buttons2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 687px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 687px;
+}
+
+.selected {
+  position: absolute;
+  left: 0;
+  top: 375px;
+  width: 254px;
+  height: 254px;
+  border-radius: 50%;
+  border: 0px solid rgb(109, 199, 227);
+  opacity: 0.6;
+}
+
+.subSelected {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 238px;
+  height: 60px;
+  border-radius: 50px;
+  border: 0px solid rgb(109, 199, 227);
 }

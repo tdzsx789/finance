@@ -1,6 +1,10 @@
 const { app, BrowserWindow, globalShortcut } = require("electron");
 const path = require("path");
-const url = require("url");
+
+require('./websocketServer');
+// const isDev = require("electron-is-dev");
+// console.log('isDev', isDev)
+const mode = process.argv[2];
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -8,18 +12,22 @@ function createWindow() {
     height: 7070,
     resizable: false,
     movable: false,
-    fullscreen: true,
-    frame: false,
-    kiosk: true,
+    // fullscreen: true,
+    // frame: false,
+    // kiosk: true,
   });
-  //   win.loadURL("http://localhost:3000/")
-  win.loadURL(
-    url.format({
-      pathname: path.join(__dirname, "./index.html"), // 修改这里
-      protocol: "file:",
-      slashes: true,
-    })
-  );
+
+  if (mode === "dev") {
+    win.loadURL("http://localhost:3000/");
+  } else {
+    win.loadURL(
+      url.format({
+        pathname: path.join(__dirname, "./index.html"), // 修改这里
+        protocol: "file:",
+        slashes: true,
+      })
+    );
+  }
 }
 
 app.whenReady().then(() => {

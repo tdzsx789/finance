@@ -9,6 +9,24 @@ import Five from './pages/five';
 function App() {
   const [showPage, setShowPage] = useState(1);
 
+  const [messages, setMessages] = useState([]);
+
+  useEffect(() => {
+    const ws = new WebSocket('ws://localhost:8080');
+
+    ws.onopen = () => {
+      console.log('Connected to WebSocket server');
+    };
+
+    ws.onmessage = event => {
+      console.log('event', event.data)
+    };
+
+    return () => {
+      ws.close();
+    };
+  }, []);
+
   useEffect(function () {
     document.addEventListener("keydown", (event) => {
       console.log('event', event)

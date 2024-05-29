@@ -1,3 +1,13 @@
+@font-face {
+  font-family: HarmonyOS_Sans_SC_Bold;
+  src: url(./asset/fonts/HarmonyOS_Sans_SC_Bold.ttf);
+}
+
+@font-face {
+  font-family: HarmonyOS_Sans_SC_Regular;
+  src: url(./asset/fonts/HarmonyOS_Sans_SC_Regular.ttf);
+}
+
 .App {
   position: relative;
   width: 7360px;

@@ -10,6 +10,7 @@ function App() {
   const webSocketRef = useRef();
   const [selected, setSelected] = useState('jinrongdashuju');
   const [subSelect, setSubSelect] = useState(0);
+  const [subSelect2, setSubSelect2] = useState(false);
 
   useEffect(() => {
     webSocketRef.current = new WebSocket('ws://192.168.2.172:8080');
@@ -41,6 +42,7 @@ function App() {
             setSelected(ele);
             sendMessage(ele);
             setSubSelect(0);
+            setSubSelect2(false);
           }}
         ></div>
       })}
@@ -59,11 +61,23 @@ function App() {
               borderWidth: ele === subSelect ? 8 : 0
             }}
             onClick={function () {
+              sendMessage(selected + 'subSelected');
               setSubSelect(ele);
+              setSubSelect2(false);
             }}
           ></div>
         })}
-        {/* <div className="subSelect2"></div> */}
+        <div
+          className="subSelect2"
+          onClick={function() {
+            sendMessage('shidazhongdian');
+            setSubSelect2(true);
+            setSubSelect(0);
+          }}
+          style={{
+            borderWidth: subSelect2 ? 8 : 0
+          }}
+        ></div>
       </> : <></>}
 
     </div>

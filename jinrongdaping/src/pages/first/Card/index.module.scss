@@ -5,6 +5,9 @@
     left: 208px;
     top: 420px;
     font-family: 'HarmonyOS_Sans_SC_Bold';
+    background-image: -webkit-linear-gradient(90deg, rgb(139,148,246) 20%, rgb(255,255,255) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .title {

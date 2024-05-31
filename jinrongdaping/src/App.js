@@ -30,6 +30,18 @@ function App() {
       if (_text === 'chanyedashuju') {
         setShowPage(3);
       }
+      if (_text === 'chengshidashuju') {
+        setShowPage(2);
+      }
+      if (_text === 'chengshidashujusubSelected') {
+        setShowPage(5);
+      }
+      if (_text === 'chanyedashujusubSelected') {
+        setShowPage(6);
+      }
+      if (_text === 'shidazhongdian') {
+        setShowPage(4);
+      }
       if (_text === 'xianshangpingtai') {
         setShowPage(7);
       }
@@ -38,33 +50,6 @@ function App() {
     return () => {
       socketRef.current.close();
     };
-  }, []);
-
-  useEffect(function () {
-    document.addEventListener("keydown", (event) => {
-      // do something
-      if (event.keyCode === 49) {
-        setShowPage(1);
-      }
-      if (event.keyCode === 50) {
-        setShowPage(2);
-      }
-      if (event.keyCode === 51) {
-        setShowPage(3);
-      }
-      if (event.keyCode === 52) {
-        setShowPage(4);
-      }
-      if (event.keyCode === 53) {
-        setShowPage(7);
-      }
-      if (event.keyCode === 81) {
-        setShowPage(5);
-      }
-      if (event.keyCode === 87) {
-        setShowPage(6);
-      }
-    });
   }, []);
 
   return (

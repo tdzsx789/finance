@@ -15,6 +15,9 @@ function createWindow() {
     // fullscreen: true,
     // frame: false,
     // kiosk: true,
+    webPreferences: {
+      webSecurity: false
+    }
   });
 
   if (mode === "dev") {

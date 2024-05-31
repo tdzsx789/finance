@@ -18,7 +18,7 @@ function App() {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = setTimeout(function () {
         setShowPage(0);
-      }, 60000 * 3)
+      }, 600 * 3)
     }
 
     window.addEventListener('touchstart', touchStart, { passive: false });
@@ -26,9 +26,9 @@ function App() {
 
   return (
     <div className="App">
-      {showPage === 0 && <Wait handleClick={function () {
+      <Wait handleClick={function () {
         handleClick(1);
-      }} />}
+      }} show={showPage === 0} />
       {showPage === 1 && <First
         handleToSecond={function () {
           handleClick(2);

@@ -1,0 +1,159 @@
+.swiper {
+    position: absolute;
+    width: 945px;
+    height: 700px;
+    left: 64px;
+    top: 1111px;
+    // opacity: 0.5;
+
+    .type {
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .value {
+        position: absolute;
+        font-size: 105px;
+        color: #fff;
+        left: 50px;
+        top: 100px;
+        font-family: 'HarmonyOS_Sans_SC_Bold';
+    }
+
+    .title {
+        position: absolute;
+        font-size: 50px;
+        color: #fff;
+        left: 45px;
+        top: 30px;
+        font-family: 'HarmonyOS_Sans_SC_Bold';
+    }
+
+    .point {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 870px;
+        top: 47px;
+        border-radius: 50%;
+    }
+
+    .diff {
+        position: absolute;
+        font-size: 40px;
+        color: #fff;
+        left: 63px;
+        top: 246px;
+        font-family: 'HarmonyOS_Sans_SC_Bold';
+    }
+
+    .diffPercent {
+        position: absolute;
+        font-size: 40px;
+        color: #fff;
+        left: 754px;
+        top: 246px;
+        font-family: 'HarmonyOS_Sans_SC_Bold';
+    }
+
+    .open {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 74px;
+        top: 338px;
+        // letter-spacing: 5px;
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .highest {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 413px;
+        top: 338px;
+        // letter-spacing: 5px;
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .liang {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 720px;
+        top: 338px;
+        // letter-spacing: 5px;
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .yesterday {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 74px;
+        top: 376px;
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .lowest {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 413px;
+        top: 376px;
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .volume {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 720px;
+        top: 376px;
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .amplitude {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 74px;
+        top: 412px;
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .changes {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 413px;
+        top: 412px;
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .changePercent {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 720px;
+        top: 412px;
+        font-family: 'HarmonyOS_Sans_SC_Regular';
+    }
+
+    .card1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .card2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .card3 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

@@ -9,7 +9,7 @@ import Five from "./pages/five";
 function App() {
   const socketRef = useRef();
   const [showPage, setShowPage] = useState(1);
-  const [messages, setMessages] = useState([]);
+  // const [messages, setMessages] = useState([]);
 
   useEffect(() => {
     socketRef.current = new WebSocket("ws://localhost:8080");

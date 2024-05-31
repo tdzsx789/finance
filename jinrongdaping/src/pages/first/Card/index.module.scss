@@ -7,6 +7,25 @@
     font-family: 'HarmonyOS_Sans_SC_Bold';
 }
 
+.title {
+    position: absolute;
+    font-size: 170px;
+    color: #fff;
+    left: 208px;
+    top: 180px;
+    font-family: 'HarmonyOS_Sans_SC_Bold';
+}
+
+.point {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    // background-color: rgb(230, 79, 39);
+    left: 2040px;
+    top: 70px;
+    border-radius: 50%;
+}
+
 .diff {
     position: absolute;
     font-size: 120px;

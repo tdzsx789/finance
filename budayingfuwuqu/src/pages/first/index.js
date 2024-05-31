@@ -13,7 +13,9 @@ import image2 from '../../asset/first/整体切图2.png';
 import buttonImg from '../../asset/first/椭圆2.png';
 import maskImg from '../../asset/first/渐变.png';
 import buttonsImg from '../../asset/first/按钮.png';
-import lineChartImg from '../../asset/first/折线图.jpg';
+// import lineChartImg from '../../asset/first/折线图.jpg';
+// import indexCover from '../../asset/first/上证指数背景.png';
+import Card from './Card';
 
 const images = [image1, image2];
 
@@ -56,7 +58,9 @@ const App = memo(function App({ handleClick }) {
             <div className={styles.button3} onClick={function () {
                 handleClick(3)
             }}></div>
-            <img src={lineChartImg} className={styles.lineChart}></img>
+            {/* <img src={lineChartImg} className={styles.lineChart}></img> */}
+            <Card data={['上证指数', '深圳成指', '创业版']} />
+            {/* <img src={indexCover} className={styles.indexCover}></img> */}
             {/* <img className={styles.button} src={按钮}></img>
             <img className={styles.zhishuBg} src={上证指数背景}></img> */}
         </div >

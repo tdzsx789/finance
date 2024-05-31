@@ -56,10 +56,11 @@ const originOption = {
         }
       }
     }
-  ]
+  ],
+  animationDuration: 3000
 };
 
-const App = memo(function App({ show }) {
+const App = memo(function App() {
   const ref1 = useRef();
   const ref2 = useRef();
   const ref3 = useRef();

@@ -1,9 +1,7 @@
 import { useEffect, useState, memo, useRef } from "react";
 import axios from 'axios';
 import styles from "./index.module.scss";
-import card1 from '../../../asset/first/上证指数.png';
-import card2 from '../../../asset/first/深证成指.png';
-import card3 from '../../../asset/first/香港.png';
+import cardBg from '../../../asset/first/大卡片.png';
 import { columns } from '../index';
 
 const originParams = {
@@ -21,7 +19,7 @@ const originParams = {
     changePercent: ''
 }
 
-const App = memo(function App() {
+const App = memo(function App({ data }) {
     const [data1, setData1] = useState(originParams);
     const [data2, setData2] = useState(originParams);
     const [data3, setData3] = useState(originParams);
@@ -73,7 +71,9 @@ const App = memo(function App() {
     return (
         <>
             <div className={styles.card1}>
-                <img src={card1}></img>
+                <img src={cardBg}></img>
+                <div className={styles.title}>{data[0]}</div>
+                <div className={styles.point} style={{ backgroundColor: data1.diff > 0 ? 'rgb(230, 79, 39)' : 'rgb(88, 108, 246)' }}></div>
                 <div className={styles.value}>{data1.value}</div>
                 <div className={styles.diff}>{data1.diff > 0 ? '+' + data1.diff : data1.diff}</div>
                 <div className={styles.diffPercent}>{data1.diffPercent > 0 ? '+' + data1.diffPercent : data1.diffPercent}%</div>
@@ -88,7 +88,9 @@ const App = memo(function App() {
                 <div className={styles.changePercent}>{data1.changePercent}%</div>
             </div>
             <div className={styles.card2}>
-                <img src={card2}></img>
+                <img src={cardBg}></img>
+                <div className={styles.title}>{data[1]}</div>
+                <div className={styles.point} style={{ backgroundColor: data2.diff > 0 ? 'rgb(230, 79, 39)' : 'rgb(88, 108, 246)' }}></div>
                 <div className={styles.value}>{data2.value}</div>
                 <div className={styles.diff}>{data2.diff > 0 ? '+' + data2.diff : data2.diff}</div>
                 <div className={styles.diffPercent}>{data2.diffPercent > 0 ? '+' + data2.diffPercent : data2.diffPercent}%</div>
@@ -103,7 +105,9 @@ const App = memo(function App() {
                 <div className={styles.changePercent}>{data2.changePercent}%</div>
             </div>
             <div className={styles.card3}>
-                <img src={card3}></img>
+                <img src={cardBg}></img>
+                <div className={styles.title}>{data[2]}</div>
+                <div className={styles.point} style={{ backgroundColor: data3.diff > 0 ? 'rgb(230, 79, 39)' : 'rgb(88, 108, 246)' }}></div>
                 <div className={styles.value}>{data3.value}</div>
                 <div className={styles.diff}>{data3.diff > 0 ? '+' + data3.diff : data3.diff}</div>
                 <div className={styles.diffPercent}>{data3.diffPercent > 0 ? '+' + data3.diffPercent : data3.diffPercent}%</div>

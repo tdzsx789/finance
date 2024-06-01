@@ -5,7 +5,7 @@ module.exports = {
         plugins: [
             new CopyWebpackPlugin({
               patterns: [{ from: "./package.json" }]
-              .concat([{ from: "./main.js" }]),
+              .concat([{ from: "./main.js" }, {from: './websocketServer.js'}]),
             }),
           ],
     }

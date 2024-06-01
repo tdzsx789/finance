@@ -2,6 +2,7 @@ import { useEffect, useState, memo, useRef } from "react";
 import axios from 'axios';
 import styles from "./index.module.scss";
 import { columns } from '../index';
+import { url } from "../config";
 
 const originIndexParams = {
   value: '',
@@ -18,19 +19,19 @@ const App = memo(function App({ subCardData }) {
   const [index6, setIndex6] = useState(originIndexParams);
 
   const getData = async (country, code) => {
-    const _result = await axios.get(`/api/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2`);
+    const _result = await axios.get(`${url}/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2`);
     if (_result.data && _result.data.length > 0) {
 
     }
   }
 
   const getCountry = async () => {
-    const _result = await axios.get('/api/fin/index/country?token=c15cc49a21dc4ecaaff430fafc128532');
+    const _result = await axios.get(`${url}/fin/index/country?token=c15cc49a21dc4ecaaff430fafc128532`);
     console.log('ccc', _result)
   }
 
   const getTikers = async (country) => {
-    const _result = await axios.get(`/api/fin/index/${country}/list?token=c15cc49a21dc4ecaaff430fafc128532`);
+    const _result = await axios.get(`${url}/fin/index/${country}/list?token=c15cc49a21dc4ecaaff430fafc128532`);
     console.log('tttt', _result)
   }
 
@@ -47,8 +48,8 @@ const App = memo(function App({ subCardData }) {
   }
 
   const getSubIndexData = async (country, code, func) => {
-    const _indexData = await axios.get(`/api/fin/index/${country}/daily/realtime?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&columns=${columns}`);
-    const _dailyData = await axios.get(`/api/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&limit=1&columns=${columns}`);
+    const _indexData = await axios.get(`${url}/fin/index/${country}/daily/realtime?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&columns=${columns}`);
+    const _dailyData = await axios.get(`${url}/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&limit=1&columns=${columns}`);
     if (_indexData.data.data && _dailyData.data.data && _indexData.data.data.length > 0 && _dailyData.data.data.length > 0) {
       const _result = getSubNewData(_indexData.data.data[0], _dailyData.data.data[0]);
       func(_result);

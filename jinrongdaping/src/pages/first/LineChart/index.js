@@ -3,6 +3,7 @@ import axios from 'axios';
 import * as echarts from 'echarts';
 import styles from "./index.module.scss";
 import { xAxisData } from './data';
+import { url } from "../config";
 
 const originOption = {
   grid: {
@@ -85,7 +86,7 @@ const App = memo(function App() {
 
 
   const getData = async (country, code, func) => {
-    const _result = await axios.get(`/api/fin/index/${country}/5min/realtime?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}`);
+    const _result = await axios.get(`${url}/fin/index/${country}/5min/realtime?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}`);
     if (_result.data.data && _result.data.data.length > 0) {
       // const _data = _result.data.data.map((ele) => {
       //   const _date = ele.date.split(' ')[1];

@@ -10,6 +10,7 @@ import styles from "./index.module.scss";
 import cardBg from '../../../asset/first/上证指数背景.png';
 
 import LineChart from '../LineChart';
+import { url } from "../config";
 
 const columns = 'close,date,high,low,open,ticker,volume,amount';
 
@@ -35,8 +36,8 @@ const App = memo(function App({ data }) {
     const [data3, setData3] = useState(originParams);
 
     const getIndexData = async (country, code, func) => {
-        const _indexData = await axios.get(`/api/fin/index/${country}/daily/realtime?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&columns=${columns}`);
-        const _dailyData = await axios.get(`/api/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&limit=1&columns=${columns}`);
+        const _indexData = await axios.get(`${url}/fin/index/${country}/daily/realtime?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&columns=${columns}`);
+        const _dailyData = await axios.get(`${url}/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&limit=1&columns=${columns}`);
         if (_indexData.data.data && _dailyData.data.data && _indexData.data.data.length > 0 && _dailyData.data.data.length > 0) {
             const _result = getNewData(_indexData.data.data[0], _dailyData.data.data[0]);
             func(_result);

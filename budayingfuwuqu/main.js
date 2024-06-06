@@ -11,6 +11,9 @@ function createWindow() {
     fullscreen: true,
     frame: false,
     kiosk: true,
+    webPreferences: {
+      webSecurity: false
+    }
   });
   //   win.loadURL("http://localhost:3000/")
   win.loadURL(

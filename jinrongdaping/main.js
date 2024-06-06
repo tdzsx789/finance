@@ -1,7 +1,9 @@
 const { app, BrowserWindow, globalShortcut } = require("electron");
 const path = require("path");
+const { fork } = require("child_process");
 
-require('./websocketServer');
+fork(path.join(__dirname, "./websocketServer.js"));
+// require('./websocketServer');
 // const isDev = require("electron-is-dev");
 // console.log('isDev', isDev)
 const mode = process.argv[2];
@@ -15,6 +17,12 @@ function createWindow() {
     // fullscreen: true,
     // frame: false,
     // kiosk: true,
+    webPreferences: {
+      webSecurity: false,
+      // preload: path.join(__dirname, 'preload.js'),
+      // nodeIntegration: true, // Ensure node integration is enabled if needed
+      // contextIsolation: false // Ensure context isolation is disabled if needed
+    },
   });
 
   if (mode === "dev") {
@@ -31,6 +39,7 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+
   createWindow();
   app.on("active", () => {
     if (BrowserWindow.getAllWindows().length === 0) {

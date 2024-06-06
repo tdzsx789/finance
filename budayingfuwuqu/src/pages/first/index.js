@@ -1,7 +1,7 @@
 import { useEffect, useRef, memo, useMemo, useState } from "react";
 import styles from "./index.module.scss";
-import 按钮 from '../../asset/first/按钮.png';
-import 上证指数背景 from '../../asset/first/上证指数背景.png';
+// import 按钮 from '../../asset/first/按钮.png';
+// import 上证指数背景 from '../../asset/first/上证指数背景.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';

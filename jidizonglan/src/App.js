@@ -18,7 +18,7 @@ function App() {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = setTimeout(function () {
         setShowPage(0);
-      }, 600 * 3)
+      }, 60000 * 5)
     }
 
     window.addEventListener('touchstart', touchStart, { passive: false });

@@ -71,14 +71,6 @@ const App = memo(function App({ subCardData }) {
     getSubIndexData('HKG', 'HSI', setIndex5);
     getSubIndexData('JPN', 'N225', setIndex6);
 
-
-    // getSubIndexData('HKG', 'HSCE', setIndex1);
-    // getSubIndexData('HKG', 'HSTECH', setIndex2);
-    // getSubIndexData('HKG', 'HSIDV', setIndex3);
-    // getSubIndexData('HKG', 'HSCI', setIndex4);
-    // getSubIndexData('HKG', 'HSIL', setIndex5);
-    // getSubIndexData('HKG', 'VHSI', setIndex6);
-
     const interval = setInterval(function () {
       getSubIndexData('CHN', '000300', setIndex1);
       //上证50

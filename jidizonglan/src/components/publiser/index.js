@@ -41,12 +41,14 @@ const App = memo(function App() {
                 return showButton === i ? <div
                     className={styles.button}
                     style={{ left: ele.left, top: ele.top }}
+                    key={'jdzlbutton' + i}
                 ></div> : <></>
             })}
             {clickButtons.map((ele, i) => {
                 return <div
                     className={styles.clickButton}
                     style={{ left: ele.left, top: ele.top }}
+                    key={'jdzlclickButtons' + i}
                     onClick={function () {
                         ref.current.scrollTo(0, 0)
                         setShowButton(i)

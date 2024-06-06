@@ -60,14 +60,17 @@ const App = memo(function App({ subCardData }) {
   useEffect(() => {
     // getCountry();
     // JPN, USA, GBR
-    // getTikers('CHN')
+    getTikers('USA')
     getSubIndexData('CHN', '000300', setIndex1);
     //上证50
-    getSubIndexData('CHN', '000016', setIndex2);
-    //深证100
-    getSubIndexData('CHN', '399330', setIndex3);
-    //科创50
-    getSubIndexData('CHN', '000688', setIndex4);
+    // getSubIndexData('CHN', '000016', setIndex2);
+    // //深证100
+    // getSubIndexData('CHN', '399330', setIndex3);
+    // //科创50
+    // getSubIndexData('CHN', '000688', setIndex4);
+    getSubIndexData('USA', 'DJI', setIndex2);
+    getSubIndexData('USA', 'GSPC', setIndex3);
+    getSubIndexData('USA', 'XNAS', setIndex4);
     //香港恒生
     getSubIndexData('HKG', 'HSI', setIndex5);
     getSubIndexData('JPN', 'N225', setIndex6);
@@ -75,15 +78,18 @@ const App = memo(function App({ subCardData }) {
     const interval = setInterval(function () {
       getSubIndexData('CHN', '000300', setIndex1);
       //上证50
-      getSubIndexData('CHN', '000016', setIndex2);
-      //深证100
-      getSubIndexData('CHN', '399330', setIndex3);
-      //科创50
-      getSubIndexData('CHN', '000688', setIndex4);
+      // getSubIndexData('CHN', '000016', setIndex2);
+      // //深证100
+      // getSubIndexData('CHN', '399330', setIndex3);
+      // //科创50
+      // getSubIndexData('CHN', '000688', setIndex4);
+      getSubIndexData('USA', 'DJI', setIndex2);
+      getSubIndexData('USA', 'GSPC', setIndex3);
+      getSubIndexData('USA', 'XNAS', setIndex4);
       //香港恒生
       getSubIndexData('HKG', 'HSI', setIndex5);
       getSubIndexData('JPN', 'N225', setIndex6);
-    }, 600 * 5)
+    }, 1000 * 60)
     return () => {
       clearInterval(interval);
     }

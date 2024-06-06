@@ -37,9 +37,13 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "dev": "electron . dev",
+    "dev:control": "electron . dev control",
     "electron-dev": "concurrently \"npm:start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron-pack": "npm run build && electron-builder",
-    "package": "electron-packager ./build start --platform=win32 --arch=x64 --overwrite"
+    "package": "electron-packager ./build start --platform=win32 --arch=x64 --overwrite",
+    "package:control": "electron-packager ./build start control --platform=win32 --arch=x64 --overwrite",
+    "publish": "npm run build && npm run package",
+    "publish:control": "npm run build:control && npm run package"
   },
   "eslintConfig": {
     "extends": [

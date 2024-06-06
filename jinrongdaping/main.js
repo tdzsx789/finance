@@ -1,11 +1,6 @@
 const { app, BrowserWindow, globalShortcut } = require("electron");
-const path = require("path");
-// const { fork } = require("child_process");
-
-// fork(path.join(__dirname, "./websocketServer.js"));
 require('./websocketServer');
-// const isDev = require("electron-is-dev");
-// console.log('isDev', isDev)
+
 const mode = process.argv[2];
 
 function createWindow() {

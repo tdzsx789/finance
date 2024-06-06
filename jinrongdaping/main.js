@@ -28,13 +28,14 @@ function createWindow() {
   if (mode === "dev") {
     win.loadURL("http://localhost:3000/");
   } else {
-    win.loadURL(
-      url.format({
-        pathname: path.join(__dirname, "./index.html"), // 修改这里
-        protocol: "file:",
-        slashes: true,
-      })
-    );
+    win.loadURL(`file://${__dirname}/index.html`);
+    // win.loadURL(
+    //   url.format({
+    //     pathname: path.join(__dirname, "./index.html"), // 修改这里
+    //     protocol: "file:",
+    //     slashes: true,
+    //   })
+    // );
   }
 }
 

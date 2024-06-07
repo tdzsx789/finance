@@ -70,7 +70,7 @@ const App = memo(function App({ subCardData }) {
     // getSubIndexData('CHN', '000688', setIndex4);
     getSubIndexData('USA', 'DJI', setIndex2);
     getSubIndexData('USA', 'GSPC', setIndex3);
-    getSubIndexData('USA', 'XNAS', setIndex4);
+    getSubIndexData('USA', 'IXIC', setIndex4);
     //香港恒生
     getSubIndexData('HKG', 'HSI', setIndex5);
     getSubIndexData('JPN', 'N225', setIndex6);
@@ -85,7 +85,7 @@ const App = memo(function App({ subCardData }) {
       // getSubIndexData('CHN', '000688', setIndex4);
       getSubIndexData('USA', 'DJI', setIndex2);
       getSubIndexData('USA', 'GSPC', setIndex3);
-      getSubIndexData('USA', 'XNAS', setIndex4);
+      getSubIndexData('USA', 'IXIC', setIndex4);
       //香港恒生
       getSubIndexData('HKG', 'HSI', setIndex5);
       getSubIndexData('JPN', 'N225', setIndex6);

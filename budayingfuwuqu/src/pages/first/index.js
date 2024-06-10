@@ -59,7 +59,7 @@ const App = memo(function App({ handleClick }) {
                 handleClick(3)
             }}></div>
             {/* <img src={lineChartImg} className={styles.lineChart}></img> */}
-            <Card data={['上证指数', '深圳成指', '创业版']} />
+            <Card data={['上证指数', '深证成指', '创业版']} />
             {/* <img src={indexCover} className={styles.indexCover}></img> */}
             {/* <img className={styles.button} src={按钮}></img>
             <img className={styles.zhishuBg} src={上证指数背景}></img> */}

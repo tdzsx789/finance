@@ -7,11 +7,13 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 7360,
     height: 7070,
+    // width: 1920,
+    // height: 1080,
     resizable: false,
     movable: false,
-    // fullscreen: true,
-    // frame: false,
-    // kiosk: true,
+    fullscreen: true,
+    frame: false,
+    kiosk: true,
     webPreferences: {
       webSecurity: false,
       // preload: path.join(__dirname, 'preload.js'),

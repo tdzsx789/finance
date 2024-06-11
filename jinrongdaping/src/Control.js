@@ -39,7 +39,7 @@ function App() {
   const [subSelect2, setSubSelect2] = useState(false);
 
   useEffect(() => {
-    webSocketRef.current = new WebSocket('ws://192.168.10.172:8080');
+    webSocketRef.current = new WebSocket('ws://192.168.2.172:8080');
 
     webSocketRef.current.onopen = () => {
       console.log('连接webSocket成功！')
@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="Control">
       <img className="buttons1" src={buttons1}
-      // onClick={sendMessage}
+      onClick={sendMessage}
       ></img>
       {list1.map((ele, i) => {
         const _left = 363 * i + 268;
@@ -67,7 +67,7 @@ function App() {
           style={{ left: _left, borderWidth: ele === selected ? 20 : 0 }}
           onClick={function () {
             setSelected(ele);
-            // sendMessage(ele);
+            sendMessage(ele);
             setSubSelect(0);
             setSubSelect2(false);
           }}
@@ -89,8 +89,7 @@ function App() {
               borderWidth: ele && (ele.name === subSelect) ? 8 : 0
             }}
             onClick={function () {
-              console.log("pagepagepage", 'chengshidashujusubSelected' + ele.name)
-              // sendMessage('chengshidashujusubSelected' + ele.name);
+              sendMessage('chengshidashujusubSelected' + ele.name);
               setSubSelect2(false);
               if (ele) setSubSelect(ele.name);
             }}
@@ -99,7 +98,7 @@ function App() {
         <div
           className="subSelect2"
           onClick={function () {
-            // sendMessage('shidazhongdian');
+            sendMessage('shidazhongdian');
             setSubSelect2(true);
             setSubSelect(0);
           }}
@@ -125,8 +124,7 @@ function App() {
               borderWidth: ele && (ele.name === subSelect) ? 8 : 0
             }}
             onClick={function () {
-              // sendMessage('chanyedashujusubSelected' + ele.name);
-              console.log("pagepagepage", 'chanyedashujusubSelected' + ele.name)
+              sendMessage('chanyedashujusubSelected' + ele.name);
               setSubSelect2(false);
               if (ele) setSubSelect(ele.name);
             }}

@@ -35,7 +35,7 @@ const App = memo(function App({ sub }) {
           loop
           muted
         ></video> :
-        <img className={styles.imageWrap} src={list[sub].url}></img>
+        <img className={styles.wrap} src={list[sub].url}></img>
       ) :
         <video
           src={videoUrl}

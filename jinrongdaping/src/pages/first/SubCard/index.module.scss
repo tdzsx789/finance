@@ -1,54 +1,54 @@
 .subCard {
   position: absolute;
-  left: 310px;
-  top: 2478px;
-  width: 1000px;
-  height: 480px;
+  left: 167px;
+  top: 1332px;
+  width: 538px;
+  height: 258px;
   // background-color: rgba(255, 0, 0, 0.5);
 
   .subTitle {
     position: absolute;
-    left: 126px;
-    top: 59px;
+    left: 68px;
+    top: 32px;
     font-family: "HarmonyOS_Sans_SC_Bold";
-    font-size: 70px;
+    font-size: 38px;
     color: #fff;
   }
 
   .subPoint {
-    width: 30px;
-    height: 30px;
+    width: 16px;
+    height: 16px;
     position: absolute;
     // background-color: rgb(230, 79, 39);
-    left: 880px;
-    top: 70px;
+    left: 473px;
+    top: 38px;
     border-radius: 50%;
   }
 
 
   .subValue {
     position: absolute;
-    font-size: 120px;
+    font-size: 65px;
     color: #fff;
-    left: 115px;
-    top: 152px;
+    left: 62px;
+    top: 82px;
     font-family: 'HarmonyOS_Sans_SC_Bold';
   }
 
   .subDiff {
     position: absolute;
-    font-size: 70px;
-    left: 115px;
-    top: 312px;
+    font-size: 38px;
+    left: 62px;
+    top: 168px;
     font-family: 'HarmonyOS_Sans_SC_Bold';
     color: rgb(6, 8, 43);
   }
 
   .subPercent {
     position: absolute;
-    font-size: 70px;
-    left: 415px;
-    top: 312px;
+    font-size: 38px;
+    left: 223px;
+    top: 168px;
     font-family: 'HarmonyOS_Sans_SC_Bold';
     color: rgb(6, 8, 43);
   }

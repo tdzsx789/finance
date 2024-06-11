@@ -8,11 +8,14 @@ import Five from "./pages/five";
 
 function App() {
   const socketRef = useRef();
-  const [showPage, setShowPage] = useState(1);
+  const [showPage, setShowPage] = useState({
+    page: 1,
+    subPage: null
+  });
   // const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    socketRef.current = new WebSocket("ws://localhost:8080");
+    socketRef.current = new WebSocket('ws://192.168.10.172:8080');
 
     socketRef.current.onopen = () => {
       console.log("建立webSocket成功！");
@@ -20,30 +23,38 @@ function App() {
 
     socketRef.current.onmessage = async (event) => {
       const _text = await event.data.text();
-      console.log("tttt", _text);
       if (_text === "jinrongdashuju") {
-        setShowPage(1);
+        setShowPage({
+          page: 1
+        });
       }
       if (_text === "chengshidashuju") {
-        setShowPage(2);
+        setShowPage({
+          page: 2
+        });
       }
       if (_text === "chanyedashuju") {
-        setShowPage(3);
+        setShowPage({
+          page: 3
+        });
       }
-      if (_text === "chengshidashuju") {
-        setShowPage(2);
+      if (_text.indexOf('chengshidashujusubSelected') > -1) {
+        const _split = _text.split('chengshidashujusubSelected');
+        setShowPage(_split[1]);
       }
-      if (_text === "chengshidashujusubSelected") {
-        setShowPage(5);
-      }
-      if (_text === "chanyedashujusubSelected") {
-        setShowPage(6);
+      if (_text.indexOf('chanyedashujusubSelected') > -1) {
+        const _split = _text.split('chanyedashujusubSelected');
+        setShowPage(_split[1]);
       }
       if (_text === "shidazhongdian") {
-        setShowPage(4);
+        setShowPage({
+          page: 4
+        });
       }
       if (_text === "xianshangpingtai") {
-        setShowPage(7);
+        setShowPage({
+          page: 5
+        });
       }
     };
 
@@ -54,11 +65,11 @@ function App() {
 
   return (
     <div className="App">
-      {showPage === 1 && <First />}
-      {(showPage === 2 || showPage === 5) && <Second sub={showPage === 5} />}
-      {(showPage === 3 || showPage === 6) && <Third sub={showPage === 6} />}
-      {showPage === 4 && <Four />}
-      {showPage === 7 && <Five />}
+      {showPage.page === 1 && <First />}
+      {showPage.page === 2 && <Second sub={showPage.subPage} />}
+      {showPage.page === 3 && <Third sub={showPage.subPage} />}
+      {showPage.page === 4 && <Four />}
+      {showPage.page === 5 && <Five />}
     </div>
   );
 }

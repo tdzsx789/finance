@@ -31,7 +31,7 @@ const App = memo(function App({ data }) {
       `${url}/fin/index/${country}/daily/realtime?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&columns=${columns}`
     );
     const _dailyData = await axios.get(
-      `${url}/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&limit=1&columns=${columns}`
+      `${url}/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&limit=2&columns=${columns}`
     );
     if (
       _indexData.data.data &&

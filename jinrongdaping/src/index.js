@@ -6,7 +6,6 @@ import Control from './Control';
 import reportWebVitals from './reportWebVitals';
 
 const env = process.env.REACT_APP_ENV;
-console.log('env', env)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

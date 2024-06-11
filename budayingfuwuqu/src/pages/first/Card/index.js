@@ -37,9 +37,12 @@ const App = memo(function App({ data }) {
 
     const getIndexData = async (country, code, func) => {
         const _indexData = await axios.get(`${url}/fin/index/${country}/daily/realtime?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&columns=${columns}`);
-        const _dailyData = await axios.get(`${url}/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&limit=1&columns=${columns}`);
+        const _dailyData = await axios.get(`${url}/fin/index/${country}/daily?token=c15cc49a21dc4ecaaff430fafc128532&ticker=${code}&order=2&limit=2&columns=${columns}`);
         if (_indexData.data.data && _dailyData.data.data && _indexData.data.data.length > 0 && _dailyData.data.data.length > 0) {
-            const _result = getNewData(_indexData.data.data[0], _dailyData.data.data[0]);
+            let _result = getNewData(_indexData.data.data[0], _dailyData.data.data[0]);
+            if (_indexData.data.data[0].date === _dailyData.data.data[0].date) {
+                _result = getNewData(_indexData.data.data[0], _dailyData.data.data[1]);
+            }
             func(_result);
         }
     }

@@ -1,22 +1,19 @@
 const { app, BrowserWindow, globalShortcut } = require("electron");
-const path = require("path");
-const { fork } = require("child_process");
+require('./websocketServer');
 
-fork(path.join(__dirname, "./websocketServer.js"));
-// require('./websocketServer');
-// const isDev = require("electron-is-dev");
-// console.log('isDev', isDev)
 const mode = process.argv[2];
 
 function createWindow() {
   const win = new BrowserWindow({
     width: 7360,
     height: 7070,
+    // width: 1920,
+    // height: 1080,
     resizable: false,
     movable: false,
-    // fullscreen: true,
-    // frame: false,
-    // kiosk: true,
+    fullscreen: true,
+    frame: false,
+    kiosk: true,
     webPreferences: {
       webSecurity: false,
       // preload: path.join(__dirname, 'preload.js'),
@@ -28,13 +25,14 @@ function createWindow() {
   if (mode === "dev") {
     win.loadURL("http://localhost:3000/");
   } else {
-    win.loadURL(
-      url.format({
-        pathname: path.join(__dirname, "./index.html"), // 修改这里
-        protocol: "file:",
-        slashes: true,
-      })
-    );
+    win.loadURL(`file://${__dirname}/index.html`);
+    // win.loadURL(
+    //   url.format({
+    //     pathname: path.join(__dirname, "./index.html"), // 修改这里
+    //     protocol: "file:",
+    //     slashes: true,
+    //   })
+    // );
   }
 }
 

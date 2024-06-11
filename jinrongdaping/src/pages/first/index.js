@@ -8,14 +8,14 @@ import LineChart from './LineChart';
 import SubCard from './SubCard';
 import videoUrl from '../../asset/first/待机.mp4';
 
-export const cardData = ['上证指数', '深圳成指', '创业版'];
+export const cardData = ['上证指数', '深证成指', '创业版'];
 export const subCardData = ['沪深300', '道琼斯指数', '标普500', '纳斯达克', '香港恒生', '日经225']
 export const columns = 'close,date,high,low,open,ticker,volume,amount';
 
-const App = memo(function App({ show }) {
+const App = memo(function App() {
 
   return (
-    <div className={styles.wrap} style={{ display: show ? 'block' : 'none' }}>
+    <div className={styles.wrap}>
       <video
         src={videoUrl}
         className={styles.video}

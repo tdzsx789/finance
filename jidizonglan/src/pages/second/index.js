@@ -2,7 +2,7 @@ import { useEffect, useState, memo, useRef } from "react";
 import styles from "./index.module.scss";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow } from 'swiper/modules';
+import { EffectCreative } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 
@@ -65,25 +65,48 @@ const App = memo(function App({ handleBack }) {
                 <Swiper
                     className={styles.swiper}
                     slidesPerView={5}
+                    centeredSlides
+                    centeredSlidesBounds
                     // spaceBetween={50}
-                    centeredSlides={true}
-                    effect={'coverflow'}
-                    initialSlide={3}
-                    coverflowEffect={{
-                        rotate: 0,
-                        depth: 0,
-                        modifier: 1,
-                        scale: 0.9,
-                        slideShadows: false,
+                    // centeredSlides={true}
+                    effect={'creative'}
+                    initialSlide={5}
+                    loop
+                    creativeEffect={{
+                        perspective: true,
+                        limitProgress: 100,
+                        prev: {
+                            translate: ["-300px", "10px", 0],
+                            rotate: [0, 0, -10],
+                            scale: 0.9,
+                            opacity: 0.85,
+                            origin: "bottom"
+                        },
+                        next: {
+                            translate: ["300px", "10px", 0],
+                            rotate: [0, 0, 10],
+                            scale: 0.9,
+                            opacity: 0.85,
+                            origin: "bottom"
+                        }
                     }}
-                    modules={[EffectCoverflow]}
+                    modules={[EffectCreative]}
                     onInit={(swiper) => {
                         swiperRef.current = swiper;
+                        // const { visibleSlides } = swiperRef.current;
+                        // visibleSlides[0].style['margin-top'] = '100px'
+                        // console.log('children', visibleSlides)
                     }}
                 >
                     {list.map((ele) => {
                         return <SwiperSlide key={ele.name}>
-                            <div className={styles.point} src={ele}>
+                            <div
+                                className={styles.point}
+                                src={ele}
+                                onClick={function () {
+                                    setModal(ele.url);
+                                }}
+                            >
                                 <div className={styles.name}>{ele.name}</div>
                             </div>
                         </SwiperSlide>
@@ -108,11 +131,14 @@ const App = memo(function App({ handleBack }) {
                     }}
                 ></div> */}
                 <img className={styles.back} src={back} onClick={handleBack}></img>
-                {modal && <div className={styles.modal}>
-                    <img src={modalData[modal - 1]} className={styles.modalBg}></img>
-                    <img src={close} className={styles.close} onClick={function () {
-                        setModal(null);
-                    }}></img>
+                {modal && <div className={styles.modalBg}>
+                    <img src={modal} className={styles.modal}></img>
+                    <img
+                        src={close}
+                        className={styles.close}
+                        onClick={function () {
+                            setModal(null);
+                        }}></img>
                 </div>}
             </div>
         </div>

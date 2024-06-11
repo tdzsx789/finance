@@ -17,10 +17,10 @@
         .swiper {
             position: absolute;
             left: 0;
-            top: 1400px;
+            top: 1300px;
             width: 100%;
-            height: 600px;
-            background-color: rgba(255,0,0,0.5);
+            height: 1200px;
+            // background-color: rgba(255,0,0,0.5);
 
             .point {
                 position: relative;
@@ -100,14 +100,14 @@
                 top: 683px;
                 width: 1734px;
                 height: 2313px;
-    
-                .close {
-                    position: absolute;
-                    left: 50%;
-                    bottom: 0;
-                    transform: translate(-50%, 50%);
-                    z-index: 10;
-                }
+            }
+
+            .close {
+                position: absolute;
+                left: 50%;
+                top: 2700px;
+                transform: translate(-50%, 50%);
+                z-index: 10;
             }
         }
     }

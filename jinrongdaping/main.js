@@ -1,12 +1,13 @@
 const { app, BrowserWindow, globalShortcut } = require("electron");
+
 require('./websocketServer');
 
 const mode = process.argv[2];
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 7360,
-    height: 7070,
+    width: 3956,
+    height: 3784,
     // width: 1920,
     // height: 1080,
     resizable: false,

@@ -1,5 +1,5 @@
 import { useEffect, useState, memo, useRef } from "react";
-import axios from 'axios';
+// import axios from 'axios';
 import styles from "./index.module.scss";
 import Time from '../../components/timer';
 import subCard from '../../asset/first/小卡片.png';

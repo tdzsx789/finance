@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="Control">
       <img className="buttons1" src={buttons1}
-      onClick={sendMessage}
+        onClick={sendMessage}
       ></img>
       {list1.map((ele, i) => {
         const _left = 363 * i + 268;
@@ -89,9 +89,11 @@ function App() {
               borderWidth: ele && (ele.name === subSelect) ? 8 : 0
             }}
             onClick={function () {
-              sendMessage('chengshidashujusubSelected' + ele.name);
               setSubSelect2(false);
-              if (ele) setSubSelect(ele.name);
+              if (ele) {
+                sendMessage('chengshidashujusubSelected' + ele.name);
+                setSubSelect(ele.name);
+              }
             }}
           ></div>
         })}
@@ -124,9 +126,11 @@ function App() {
               borderWidth: ele && (ele.name === subSelect) ? 8 : 0
             }}
             onClick={function () {
-              sendMessage('chanyedashujusubSelected' + ele.name);
               setSubSelect2(false);
-              if (ele) setSubSelect(ele.name);
+              if (ele) {
+                sendMessage('chanyedashujusubSelected' + ele.name);
+                setSubSelect(ele.name);
+              }
             }}
           ></div>
         })}

@@ -1,8 +1,8 @@
 import { useEffect, useState, memo, useMemo } from "react";
 import styles from "./index.module.scss";
 
-import oneUnSelect from '../../asset/third/1F(未选中).png';
-import oneSelected from '../../asset/third/1F(选中).png';
+import oneUnSelect from '../../asset/third/1F（未选中）.png';
+import oneSelected from '../../asset/third/1F（选中）.png';
 import oneBuilding from '../../asset/third/1F轴测.png';
 import twoBuilding from '../../asset/third/2F轴测.png';
 import twoUnSelect from '../../asset/third/2F（未选中）.png';
@@ -28,18 +28,18 @@ const modalData = {
 };
 
 const buiding1List = [
-    { name: '科创金融展厅', width: 590, left: 250, top: 1928 },
-    { name: '金融咖啡厅', width: 666, left: 1588, top: 2210 },
-    { name: '共享办公室', width: 650, left: 1260, top: 1950 },
-    { name: '机构办公区', width: 850, left: 1360, top: 1679 },
-    { name: '服务接待大厅', width: 866, left: 331, top: 2318 },
+    { name: '科创金融展厅', width: 560, left: 230, top: 1778 },
+    { name: '金融咖啡厅', width: 610, left: 1475, top: 2038 },
+    { name: '共享办公室', width: 615, left: 1153, top: 1792 },
+    { name: '机构办公区', width: 777, left: 1257, top: 1550 },
+    { name: '服务接待大厅', width: 806, left: 301, top: 2138 },
 ]
 
 const building2List = [
-    { name: '会议室', width:  590, left: 190, top: 1720 },
-    { name: '科创金融路演大厅', width: 866, left: 304, top: 2180 },
-    { name: '贵宾接待室', width: 535, left: 1742, top: 2322 },
-    { name: '会议中心', width: 844, left: 504, top: 2567 },
+    { name: '会议室', width:  566, left: 180, top: 1588 },
+    { name: '科创金融路演大厅', width: 800, left: 280, top: 2012 },
+    { name: '贵宾接待室', width: 495, left: 1602, top: 2142 },
+    { name: '会议中心', width: 787, left: 460, top: 2364 },
 ]
 
 const App = memo(function App({ handleBack }) {

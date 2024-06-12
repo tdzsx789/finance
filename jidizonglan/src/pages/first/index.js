@@ -1,8 +1,8 @@
 import { useEffect, useRef, memo, useMemo, useState } from "react";
 import styles from "./index.module.scss";
 
-import 按钮1 from '../../asset/first/按钮1.png';
-import 按钮2 from '../../asset/first/按钮2.png';
+import 按钮1 from '../../asset/first/按键1.png';
+import 按钮2 from '../../asset/first/按键2.png';
 import 文字 from '../../asset/first/文字.png';
 
 const App = memo(function App({ handleToSecond, handleToThird }) {

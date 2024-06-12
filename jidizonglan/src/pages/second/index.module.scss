@@ -24,8 +24,8 @@
 
             .point {
                 position: relative;
-                width: 400px;
-                height: 400px;
+                width: 420px;
+                height: 420px;
                 background-image: url(./按钮.png);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
@@ -82,7 +82,7 @@
         .back {
             position: absolute;
             left: 50%;
-            top: 3350px;
+            top: 3150px;
             transform: translateX(-50%);
         }
 
@@ -96,16 +96,16 @@
 
             .modal {
                 position: absolute;
-                left: 306px;
-                top: 683px;
-                width: 1734px;
-                height: 2313px;
+                left: 282px;
+                top: 804px;
+                width: 1600px;
+                height: 2135px;
             }
 
             .close {
                 position: absolute;
                 left: 50%;
-                top: 2700px;
+                top: 2640px;
                 transform: translate(-50%, 50%);
                 z-index: 10;
             }

@@ -7,19 +7,21 @@
 
     .button1 {
         position: absolute;
-        left: 185px;
-        top: 3500px;
+        left: 29%;
+        top: 3230px;
+        transform: translate(-50%);
     }
 
     .button2 {
         position: absolute;
-        left: 1204px;
-        top: 3500px;
+        left: 70%;
+        top: 3230px;
+        transform: translate(-50%);
     }
 
     .text {
         position: absolute;
-        left: 241px;
-        top: 1458px;
+        left: 222px;
+        top: 1345px;
     }
 }

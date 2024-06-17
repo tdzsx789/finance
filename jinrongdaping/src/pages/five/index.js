@@ -6,10 +6,10 @@ const App = memo(function App() {
   return (
     <div className={styles.wrap}>
       <iframe
-        src={"https://financeun.com/"}
+        src={"https://fininfov.cnfic.com.cn/shareScreen/eyJzY3JlZW5JZCI6NzAwMTd9"}
         className={styles.iframe}
-        width={7360}
-        height={7070}
+        width={3956}
+        height={3784}
       // onLoad={function () {
       //     setLoading(false)
       // }}

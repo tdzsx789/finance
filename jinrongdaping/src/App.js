@@ -15,7 +15,7 @@ function App() {
   // const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    socketRef.current = new WebSocket("ws://192.168.10.172:8080");
+    socketRef.current = new WebSocket("ws://192.168.10.18:8080");
 
     socketRef.current.onopen = () => {
       console.log("建立webSocket成功！");

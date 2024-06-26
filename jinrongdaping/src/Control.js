@@ -5,7 +5,15 @@ import buttons3 from './asset/control/产业大数据二级.png';
 import './Control.css';
 
 const list1 = ['jinrongdashuju', 'chengshidashuju', 'chanyedashuju', 'xianshangpingtai'];
-const chengshiList = [null, null, null,
+const chengshiList = [null,
+  {
+    name: '光电子信息产业园',
+    type: 'image'
+  },
+  {
+    name: '二级城市大数据青年社区',
+    type: 'image'
+  },
   {
     name: '科创金融总部一期',
     type: 'video'
@@ -18,18 +26,49 @@ const chengshiList = [null, null, null,
     name: '武汉新城体育中心',
     type: 'image'
   },
-  null, null];
-const chanyeList = [
   {
-    name: '武汉光谷中华科技产业园',
+    name: '中央公园',
     type: 'image'
   },
-  null, null, null, null,
+  {
+    name: '未来公园',
+    type: 'image'
+  }
+];
+
+const chanyeList = [
+  {
+    name: '光谷中华科技产业园',
+    type: 'image'
+  },
+  {
+    name: '光电子信息产业园',
+    type: 'image'
+  },
+  {
+    name: '未来科技城',
+    type: 'image'
+  },
+  {
+    name: '现代服务业园',
+    type: 'image'
+  },
+  {
+    name: '智能制造产业园',
+    type: 'image'
+  },
   {
     name: '武汉光谷生物城',
-    type: 'video'
+    type: 'image'
   },
-  null, null
+  {
+    name: '综保区',
+    type: 'image'
+  },
+  {
+    name: '中心城',
+    type: 'image'
+  }
 ];
 
 function App() {
@@ -39,7 +78,8 @@ function App() {
   const [subSelect2, setSubSelect2] = useState(false);
 
   useEffect(() => {
-    webSocketRef.current = new WebSocket('ws://192.168.10.18:8080');
+    // webSocketRef.current = new WebSocket('ws://192.168.10.18:8080');
+    webSocketRef.current = new WebSocket('ws://192.168.2.172:8080');
 
     webSocketRef.current.onopen = () => {
       console.log('连接webSocket成功！')

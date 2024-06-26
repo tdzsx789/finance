@@ -78,8 +78,8 @@ function App() {
   const [subSelect2, setSubSelect2] = useState(false);
 
   useEffect(() => {
-    // webSocketRef.current = new WebSocket('ws://192.168.10.18:8080');
-    webSocketRef.current = new WebSocket('ws://192.168.2.172:8080');
+    webSocketRef.current = new WebSocket('ws://192.168.10.18:8080');
+    // webSocketRef.current = new WebSocket('ws://192.168.2.172:8080');
 
     webSocketRef.current.onopen = () => {
       console.log('连接webSocket成功！')

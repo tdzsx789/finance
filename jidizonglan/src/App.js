@@ -4,6 +4,7 @@ import Wait from './pages/wait';
 import First from './pages/first';
 import Second from './pages/second';
 import Third from './pages/third';
+import Four from './pages/four';
 
 function App() {
   const [showPage, setShowPage] = useState(0);
@@ -31,16 +32,23 @@ function App() {
       }} show={showPage === 0} />
       {showPage === 1 && <First
         handleToSecond={function () {
+          console.log('handleToSecond')
           handleClick(2);
         }}
         handleToThird={function () {
           handleClick(3);
+        }}
+        handleToFour={function () {
+          handleClick(4);
         }}
       />}
       {showPage === 2 && <Second handleBack={function () {
         handleClick(1);
       }} />}
       {showPage === 3 && <Third handleBack={function () {
+        handleClick(1);
+      }} />}
+      {showPage === 4 && <Four handleBack={function () {
         handleClick(1);
       }} />}
     </div>

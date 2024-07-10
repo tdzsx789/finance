@@ -1,5 +1,6 @@
-const { app, BrowserWindow, globalShortcut } = require("electron");
+const { app, BrowserWindow, globalShortcut, ipcMain } = require("electron");
 const path = require("path");
+const fs = require('fs');
 const url = require("url");
 
 function createWindow() {
@@ -11,6 +12,10 @@ function createWindow() {
     fullscreen: true,
     frame: false,
     kiosk: true,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
+      contextIsolation: true,
+    },
   });
   //   win.loadURL("http://localhost:3000/")
   win.loadURL(
@@ -39,4 +44,17 @@ app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
     app.quit();
   }
+});
+
+ipcMain.handle('read-directory', async (event, directoryPath) => {
+  return new Promise((resolve, reject) => {
+    fs.readdir(directoryPath, (err, files) => {
+      if (err) {
+        reject(err);
+      } else {
+        console, log('ddd', files)
+        resolve(files);
+      }
+    });
+  });
 });

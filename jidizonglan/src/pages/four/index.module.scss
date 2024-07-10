@@ -1,0 +1,140 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../asset/first/基地总览一级背景.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .waitVideo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        .loopVideo {
+            width: 100%;
+            height: 100%;
+        }
+
+        .button {
+            position: absolute;
+            left: 0px;
+            top: 1297px;
+        }
+
+        .button1 {
+            position: absolute;
+            left: 435px;
+            top: 1500px;
+            width: 420px;
+            height: 420px;
+        }
+
+        .button2 {
+            position: absolute;
+            left: 935px;
+            top: 1300px;
+            width: 520px;
+            height: 520px;
+        }
+
+        .button3 {
+            position: absolute;
+            left: 1487px;
+            top: 1500px;
+            width: 420px;
+            height: 420px;
+        }
+
+        .back {
+            position: absolute;
+            left: 50%;
+            top: 3379px;
+            transform: translateX(-50%);
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            opacity: 0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            opacity: 0;
+        }
+
+        .scrollWrap {
+            width: 1700px;
+            height: 2050px;
+            position: absolute;
+            left: 50%;
+            top: 1250px;
+            transform: translateX(-50%);
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            .img {
+                margin-bottom: 60px;
+            }
+        }
+
+        .buttonWrap {
+            position: absolute;
+            left: 207px;
+            top: 3158px;
+            display: flex;
+
+            .buttons {
+                position: absolute;
+                left: 0%;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+
+                .select {
+                    width: 25%;
+                    font-family: 'HarmonyOS_Sans_SC_Bold';
+                    font-size: 42px;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 178px;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+
+        .modalBg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+
+            .modal {
+                position: absolute;
+                left: 282px;
+                top: 804px;
+                width: 1600px;
+                height: 2135px;
+            }
+
+            .close {
+                position: absolute;
+                left: 50%;
+                top: 2640px;
+                transform: translate(-50%, 50%);
+                z-index: 10;
+            }
+        }
+    }
+}

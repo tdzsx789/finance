@@ -1,12 +1,15 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    webpack: {
-        plugins: [
-            new CopyWebpackPlugin({
-              patterns: [{ from: "./package.json" }]
-              .concat([{ from: "./main.js" }]),
-            }),
-          ],
-    }
+  webpack: {
+    plugins: [
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: "./package.json" },
+          { from: "public/images", to: "images" }
+        ]
+          .concat([{ from: "./main.js" }]),
+      }),
+    ],
+  }
 };

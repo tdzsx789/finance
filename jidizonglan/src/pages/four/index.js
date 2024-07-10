@@ -56,7 +56,7 @@ const App = memo(function App({ handleBack }) {
                 ></video>
                 <div className={styles.scrollWrap}>
                     {images.map((ele, i) => {
-                        return <img key={`images_${i}`} className={styles.img} src={'/images/组 1.png'}></img>
+                        return <img key={`images_${i}`} className={styles.img} src={ele}></img>
                     })}
                 </div>
                 {/* <div className={styles.buttonWrap}>

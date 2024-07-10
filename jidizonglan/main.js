@@ -1,6 +1,6 @@
 const { app, BrowserWindow, globalShortcut, ipcMain } = require("electron");
 const path = require("path");
-const fs = require('fs');
+const fs = require("fs");
 const url = require("url");
 
 function createWindow() {
@@ -13,11 +13,11 @@ function createWindow() {
     frame: false,
     kiosk: true,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
+      preload: path.join(__dirname, "preload.js"),
       contextIsolation: true,
     },
   });
-  //   win.loadURL("http://localhost:3000/")
+  // win.loadURL("http://localhost:3000/")
   win.loadURL(
     url.format({
       pathname: path.join(__dirname, "./index.html"), // 修改这里
@@ -46,14 +46,17 @@ app.on("window-all-closed", () => {
   }
 });
 
-ipcMain.handle('read-directory', async (event, directoryPath) => {
+ipcMain.handle("read-directory", async (event, directoryPath) => {
   return new Promise((resolve, reject) => {
-    fs.readdir(directoryPath, (err, files) => {
+    const _path = path.join(__dirname, directoryPath);
+    fs.readdir(_path, (err, files) => {
       if (err) {
         reject(err);
       } else {
-        console, log('ddd', files)
-        resolve(files);
+        const _files = files.map((ele) => {
+          return path.join(__dirname, `${directoryPath}/${ele}`);
+        })
+        resolve(_files);
       }
     });
   });

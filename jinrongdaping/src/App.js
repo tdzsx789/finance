@@ -16,6 +16,7 @@ function App() {
 
   useEffect(() => {
     socketRef.current = new WebSocket("ws://192.168.10.18:8080");
+    // socketRef.current = new WebSocket("ws://192.168.2.172:8080");
 
     socketRef.current.onopen = () => {
       console.log("建立webSocket成功！");

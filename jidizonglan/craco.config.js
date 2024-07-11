@@ -6,10 +6,10 @@ module.exports = {
       new CopyWebpackPlugin({
         patterns: [
           { from: "./package.json" },
-          { from: "public/images", to: "images" }
-        ]
-          .concat([{ from: "./main.js" }]),
+          { from: "public/images", to: "images" },
+          { from: "./preload.js", to: "preload.js" },
+        ].concat([{ from: "./main.js" }]),
       }),
     ],
-  }
+  },
 };

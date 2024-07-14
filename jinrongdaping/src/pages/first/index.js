@@ -6,7 +6,8 @@ import subCard from '../../asset/first/小卡片.png';
 import Cards from './Card';
 import LineChart from './LineChart';
 import SubCard from './SubCard';
-import videoUrl from '../../asset/first/待机.mp4';
+// import videoUrl from '../../asset/first/待机.mp4';
+import imgUrl from '../../asset/first/待机背景.jpg';
 
 export const cardData = ['上证指数', '深证成指', '创业版'];
 export const subCardData = ['沪深300', '道琼斯指数', '标普500', '纳斯达克', '香港恒生', '日经225']
@@ -16,13 +17,14 @@ const App = memo(function App() {
 
   return (
     <div className={styles.wrap}>
-      <video
+      {/* <video
         src={videoUrl}
         className={styles.video}
         autoPlay
         loop
         muted
-      ></video>
+      ></video> */}
+      <img src={imgUrl} className={styles.video}></img>
       <Time />
       <Cards data={cardData}></Cards>
       <LineChart></LineChart>

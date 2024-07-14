@@ -9,7 +9,7 @@ import Five from "./pages/five";
 function App() {
   const socketRef = useRef();
   const [showPage, setShowPage] = useState({
-    page: 1,
+    page: 3,
     subPage: null,
   });
   // const [messages, setMessages] = useState([]);

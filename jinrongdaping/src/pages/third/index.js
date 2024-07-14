@@ -4,9 +4,10 @@ import styles from "./index.module.scss";
 // import subImage from "../../asset/third/二级产业大数据.jpg";
 // import image from "../../asset/third/二级八大产业园总览.jpg";
 
-import videoUrl from './二级八大产业园总览_1.mp4';
+// import videoUrl from './二级八大产业园总览_1.mp4';
 // import 二级产业大数据武汉光谷生物城_1 from './二级产业大数据武汉光谷生物城_1.mp4';
 // import 二级产业大数据 from './二级产业大数据-改.jpg';
+import secondImg from './二级产业大数据-新.jpg';
 import 光谷中华科技产业园 from './光谷中华科技产业园.jpg';
 import 光电子信息产业园 from './光电子信息产业园.jpg';
 import 未来科技城 from './未来科技城.jpg';
@@ -64,13 +65,14 @@ const App = memo(function App({ sub }) {
         ></video> :
         <img className={styles.wrap} src={list[sub].url}></img>
       ) :
-        <video
-          src={videoUrl}
-          className={styles.wrap}
-          autoPlay
-          loop
-          muted
-        ></video>
+        // <video
+        //   src={videoUrl}
+        //   className={styles.wrap}
+        //   autoPlay
+        //   loop
+        //   muted
+        // ></video>
+        <img className={styles.wrap} src={secondImg}></img>
       }
     </>
   );
